@@ -1,0 +1,13 @@
+.frame{
+    border-radius: 999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+@media (min-width:1024px) {
+    .frame{
+        width: var(--lg-width)!important;
+        height: var(--lg-height)!important;
+    }
+}

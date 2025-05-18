@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #17161b;
+  --foreground: #ffffff;
+}
+
+body{
+  font-family: var(--font-inria-sans),Arial, Helvetica, sans-serif ;
+  color:var(--foreground);
+  background: var(--background);
+}
+
+
+.animate-scroll{
+  display: inline-block;
+  animation: scroll-horizontal 12s linear infinite;
+  min-width: max-content;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
