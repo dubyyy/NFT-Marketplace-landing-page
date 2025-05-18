@@ -1,6 +1,6 @@
 import { CATEGORY_DATA  } from '@/app/_data/category'
 import { twMerge } from 'tailwind-merge'
-import {delay, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 const CollectionCategory= ({selectedCategory,setSelectedCategory}:{
     selectedCategory:string,
     setSelectedCategory:(category:string)=> void

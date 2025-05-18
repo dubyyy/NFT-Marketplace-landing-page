@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import TextAnimation from "../hero-section/text-animation";
 import Button from "../button/button";

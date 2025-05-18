@@ -13,12 +13,12 @@ const HeroMovingFrame = () => {
   ];
 
   useEffect(()=>{
-   let interval=setInterval(()=>{
+   const interval=setInterval(()=>{
     setCurrentIndex((prev:number)=>(prev +1) % frames.length)
         
     },2000)
     return ()=>clearInterval(interval)
-  },[])
+  },[frames.length])
 
   const getPosition =(index:number)=>{
 
@@ -28,7 +28,7 @@ const HeroMovingFrame = () => {
       right:{x:isMobile ? 50:120,opacity:0.65,scale:0.8}
     }
 
-    let diff =(index-currentIndex+3)% 3;
+    const diff =(index-currentIndex+3)% 3;
     if (diff === 0) return position.center;
     if (diff === 1) return position.right;
     return position.left
